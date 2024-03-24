@@ -9,7 +9,8 @@ Stay tuned!
 
 The Chesapeake Dataset
 -------
-The Chesapeake Bay dataset, grouped by Microsoft (https://lila.science/datasets/chesapeakelandcover), contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. Figure \ref{Chesa} illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. In more detail, the data sources are shown as follows:
+![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png)
+The Chesapeake Bay dataset, grouped by Microsoft (https://lila.science/datasets/chesapeakelandcover), contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. Figure 1 illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. In more detail, the data sources are shown as follows:
 
 **The HR remote sensing images** with 1-meter resolution were captured by the airborne platform of the U.S. Department of Agriculture’s National Agriculture Imagery Program (NAIP). The images contained four bands of red, green, blue, and near-infrared.
 
