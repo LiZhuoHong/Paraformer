@@ -14,6 +14,7 @@ Contact me at ashelee@whu.edu.cn
 Our previous works:
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): The first 1-m resolution national-scale land-cover map of China.
+  
 The Chesapeake Dataset
 -------
 ![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png)
@@ -26,6 +27,7 @@ The Chesapeake Bay dataset, grouped by Microsoft, contains 1-meter resolution im
 **The HR ground references** with 1-meter resolution were obtained from the Chesapeake Bay Conservancy Land Cover (CCLC) project. The CCLC data were interpreted based on the 1-meter NAIP imagery and LiDAR data containing six land-cover types. In this paper, the CCLC data were only used as the ground reference for quantitative and qualitative assessment and were not involved in the framework training or optimization process. 
 
 The data can be downloaded at Microsoft's website: [**Chesapeake dataset**](https://lila.science/datasets/chesapeakelandcover)
+
 The Poland Dataset
 -------
 ![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png)
