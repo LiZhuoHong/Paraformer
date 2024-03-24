@@ -3,14 +3,21 @@ Large-scale high-resolution (HR) land-cover mapping is a vital task to survey th
 However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
 To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR land-cover mapping with easy-access historical land-cover data of low resolution (LR). 
 
-The code and data are regrouping. 
+All data used in the paper is released below.
+The code is still regrouping. 
 We are preparing the camera-ready version of the CVPR 2024.
 Stay tuned!
 
+Contact me at ashelee@whu.edu.cn
+* [**Paper**](https://arxiv.org/abs/2403.02746)
+  
+Our previous works:
+* [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): The low-to-high network for HR land-cover mapping using LR labels.
+* [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): The first 1-m resolution national-scale land-cover map of China.
 The Chesapeake Dataset
 -------
 ![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png)
-The Chesapeake Bay dataset, grouped by Microsoft (https://lila.science/datasets/chesapeakelandcover), contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. Figure 1 illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. In more detail, the data sources are shown as follows:
+The Chesapeake Bay dataset, grouped by Microsoft, contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. Figure 1 illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. In more detail, the data sources are shown as follows:
 
 **The HR remote sensing images** with 1-meter resolution were captured by the airborne platform of the U.S. Department of Agriculture’s National Agriculture Imagery Program (NAIP). The images contained four bands of red, green, blue, and near-infrared.
 
@@ -18,11 +25,24 @@ The Chesapeake Bay dataset, grouped by Microsoft (https://lila.science/datasets/
 
 **The HR ground references** with 1-meter resolution were obtained from the Chesapeake Bay Conservancy Land Cover (CCLC) project. The CCLC data were interpreted based on the 1-meter NAIP imagery and LiDAR data containing six land-cover types. In this paper, the CCLC data were only used as the ground reference for quantitative and qualitative assessment and were not involved in the framework training or optimization process. 
 
-
+The data can be downloaded at Microsoft's website: [**Chesapeake dataset**](https://lila.science/datasets/chesapeakelandcover)
 The Poland Dataset
 -------
+![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png)
+The Poland dataset contained 14 Provinces of Poland which included the Provinces of Pomorskie, Lódzkie, Lubuskie, Dolnoslaskie, and so on. The Poland dataset contains 0.25-meter resolution images, three kinds of 10-meter resolution land-cover products, and a 30-meter resolution land-cover product to construct the training data pairs with different combinations. Figure \ref{poland} demonstrated the location, DEM, numbers of the tiles, and data samples of the Poland dataset. In more detail, the data sources are shown as follows:
+
+**The HR remote sensing images** with 0.25-meter and 0.5-meter resolution were collected from the LandCover.ai dataset where the image sources are from the public geodetic resource used in the Land Parcel Identification System (LPIS). The images contained three bands of red, green, and blue.
+
+**The rough historical labeled data** with 10-meter resolution were collected from three types of global land-cover products which were (1) The FROM_GLC10 provided by the Tsinghua University, (2) The ESA_WorldCover v100 provided by the European Space Agency (ESA), and (3) The ESRI 10-meter global land cover (abbreviated as ESRI_GLC10) provided by the ESRI Inc. and IO Inc. The 30-meter resolution labeled data were collected from the 30-meter global land-cover product GLC_FCS30 provided by the Chinese Academy of Sciences (CAS).
+
+**The HR ground references** were obtained from the OpenEarthMap dataset provided by the University of Tokyo. The ground references were interpreted based on the 0.25-meter and 0.5-meter resolution LPIS imagery and contained five land-cover types. 
+
+The data can be downloaded at [**Poland dataset**](https://drive.google.com/file/d/1qz1r5IQ-bkpUJN52GeGwvCFcbsaRu1Gs/view?usp=sharing)
 
 The SinoLC-1 Dataset
 -------
+![image](https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png)
+Based on our previous work on SinoLC-1 (i.e., the first 1-m land-cover map of China), we regard the intersected results of three 10-m land-cover products (ESA_GLC10, Esri_GLC10, and FROM_GLC10) as the LR training labels of 1-m Google Earth images. The Paraformer refines a more accurate urban pattern. For the whole of Wuhan City, the reported overall accuracy (OA) of SinoLC-1 is 72.40%. The updated results of the proposed Paraformer reach 74.98% with a 2.58% improvement.
 
+The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zenodo.7707461)
 
