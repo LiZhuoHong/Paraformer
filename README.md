@@ -14,10 +14,13 @@ Contact me at ashelee@whu.edu.cn
 Our previous works:
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): The first 1-m resolution national-scale land-cover map of China.
+
+Paraformer
+-------
   
 The Chesapeake Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png" width="80%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png" width="90%">
 The Chesapeake Bay dataset, grouped by Microsoft Research, contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. The figure illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. 
 
 * **The HR remote sensing images** with 1-meter resolution were captured by the airborne platform of the U.S. Department of Agriculture’s National Agriculture Imagery Program (NAIP). The images contained four bands of red, green, blue, and near-infrared.
@@ -30,7 +33,7 @@ The data can be downloaded at Microsoft's website: [**Chesapeake dataset**](http
 
 The Poland Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png" width="80%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png" width="90%">
 The Poland dataset contained 14 Provinces of Poland, including the Provinces of Pomorskie, Lódzkie, Lubuskie, Dolnoslaskie, etc. The figure demonstrates the location, DEM, numbers of the tiles, and data samples of the Poland dataset. 
 
 * **The HR remote sensing images** with 0.25-meter and 0.5-meter resolution were collected from the LandCover.ai dataset where the image sources are from the public geodetic resource used in the Land Parcel Identification System (LPIS). The images contained three bands of red, green, and blue.
@@ -43,11 +46,9 @@ The data can be downloaded at [**Poland dataset**](https://drive.google.com/file
 
 The SinoLC-1 Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png" width="80%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png" width="90%">
 Based on our previous work on SinoLC-1 (i.e., the first 1-m land-cover map of China), we regard the intersected results of three 10-m land-cover products (ESA_GLC10, Esri_GLC10, and FROM_GLC10) as the LR training labels of 1-m Google Earth images. The Paraformer refines a more accurate urban pattern. For the whole of Wuhan City, the reported overall accuracy (OA) of SinoLC-1 is 72.40%. The updated results of the proposed Paraformer reach 74.98% with a 2.58% improvement.
 
 The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zenodo.7707461)
 
-Paraformer
--------
 
