@@ -3,7 +3,7 @@ Large-scale high-resolution (HR) land-cover mapping is a vital task to survey th
 However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
 To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR land-cover mapping with easy-access historical land-cover data of low resolution (LR). 
 
-The Paraformer is accepted by CVPR 2024 **Highlight** with a score of 5/5/4. See you in VALSE (Chongqing, 5 May) and CVPR (Seattle, 17 June)!
+The Paraformer is accepted by CVPR 2024 **:rocket:Highlight** with a score of 5/5/4. See you in VALSE (Chongqing, 5 May) and CVPR (Seattle, 17 June)!
 Contact me at ashelee@whu.edu.cn
 * [**Paper**](https://arxiv.org/abs/2403.02746)
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
