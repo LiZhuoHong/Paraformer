@@ -70,4 +70,10 @@ The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zen
 Citation
 -------
    ```bash
+@article{li2024learning,
+  title={Learning without Exact Guidance: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels},
+  author={Li, Zhuohong and He, Wei and Li, Jiepan and Lu, Fangxiao and Zhang, Hongyan},
+  journal={arXiv preprint arXiv:2403.02746},
+  year={2024}
+}
 
