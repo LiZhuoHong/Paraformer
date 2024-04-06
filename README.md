@@ -3,11 +3,7 @@ Large-scale high-resolution (HR) land-cover mapping is a vital task to survey th
 However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
 To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR land-cover mapping with easy-access historical land-cover data of low resolution (LR). 
 
-All data used in the paper is released below.
-The code is still regrouping. 
-We are preparing the camera-ready version of the CVPR 2024.
-Stay tuned!
-
+The Paraformer is accepted by CVPR 2024 **Highlight** with a score of 5/5/4. See you in VALSE (Chongqing, 5 May) and CVPR (Seattle, 17 June)!
 Contact me at ashelee@whu.edu.cn
 * [**Paper**](https://arxiv.org/abs/2403.02746)
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
@@ -18,10 +14,28 @@ Our previous works:
 
 Paraformer
 -------
+## Training Instructions
+
+* **To train and test the Paraformer on the default Chesapeake Bay dataset, follow these steps:**
+
+1. Train:
+   ```bash
+   python train.py --dataset Chesapeake --img_size 224 --batch_size 10 --max_epochs 50 --savepath *save path of your folder* --gpu 0
+2. Test :
+   ```bash
+   python test.py --dataset Chesapeake --model_path *The path of trained .pth file* --save_path *To save the inferred results* --gpu 0
+   
+* **To train and test the framework on your dataset:**
+
+1. Generate a train and test lists (.csv) of your dataset (an example is in the "dataset" folder).
+2. Change the label class and colormap in the "utils.py" file.
+3. Add your dataset_config in the "train.py" and "test.py" files.
+4. Run the command above by changing the dataset name.
+
   
 The Chesapeake Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png" width="90%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png" width="70%">
 The Chesapeake Bay dataset, grouped by Microsoft Research, contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. The figure illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. 
 
 * **The HR remote sensing images** with 1-meter resolution were captured by the airborne platform of the U.S. Department of Agriculture’s National Agriculture Imagery Program (NAIP). The images contained four bands of red, green, blue, and near-infrared.
@@ -34,7 +48,7 @@ The data can be downloaded at Microsoft's website: [**Chesapeake dataset**](http
 
 The Poland Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png" width="90%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png" width="70%">
 The Poland dataset contained 14 Provinces of Poland, including the Provinces of Pomorskie, Lódzkie, Lubuskie, Dolnoslaskie, etc. The figure demonstrates the location, DEM, numbers of the tiles, and data samples of the Poland dataset. 
 
 * **The HR remote sensing images** with 0.25-meter and 0.5-meter resolution were collected from the LandCover.ai dataset where the image sources are from the public geodetic resource used in the Land Parcel Identification System (LPIS). The images contained three bands of red, green, and blue.
@@ -47,9 +61,12 @@ The data can be downloaded at [**Poland dataset**](https://drive.google.com/file
 
 The SinoLC-1 Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png" width="90%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png" width="70%">
 Based on our previous work on SinoLC-1 (i.e., the first 1-m land-cover map of China), we regard the intersected results of three 10-m land-cover products (ESA_GLC10, Esri_GLC10, and FROM_GLC10) as the LR training labels of 1-m Google Earth images. The Paraformer refines a more accurate urban pattern. For the whole of Wuhan City, the reported overall accuracy (OA) of SinoLC-1 is 72.40%. The updated results of the proposed Paraformer reach 74.98% with a 2.58% improvement.
 
 The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zenodo.7707461)
 
+Citation
+-------
+   ```bash
 
