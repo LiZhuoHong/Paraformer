@@ -50,12 +50,12 @@ class L2HNet(nn.Module):
             self.rpblocks.append(rpblock)
         
         self.out_conv1 = nn.Sequential(
-            StdConv2d(self.width * length, output_chs*length, kernel_size=3, stride=2, bias=False, padding=1),
+            StdConv2d(self.width * length, output_chs * length, kernel_size=3, stride=2, bias=False, padding=1),
             nn.GroupNorm(32, output_chs*5, eps=1e-6),
             nn.ReLU()
         )
         self.out_conv2 = nn.Sequential(
-            StdConv2d(output_chs*length, 1024, kernel_size=3, stride=2, bias=False, padding=1),
+            StdConv2d(output_chs * length, 1024, kernel_size=3, stride=2, bias=False, padding=1),
             nn.GroupNorm(32, 1024, eps=1e-6),
             nn.ReLU()
         )
