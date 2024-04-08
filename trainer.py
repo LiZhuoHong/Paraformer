@@ -257,7 +257,7 @@ def trainer_dataset(args, model, snapshot_path):
         avg_loss1 = np.mean(loss1)
         avg_loss2=np.mean(loss2)
         logging.info('Epoch : %d, CE-branch1 : %f, MCE-branch2: %f, loss: %f' % (epoch_num, avg_loss1, avg_loss2, avg_loss1*0.5+avg_loss2*0.5))
-        save_interval = 5 
+        save_interval = 20 
         if epoch_num  % save_interval == 0:
             save_mode_path = os.path.join(snapshot_path, 'epoch_' + str(epoch_num) + '.pth')
             torch.save(model.state_dict(), save_mode_path)
@@ -267,7 +267,7 @@ def trainer_dataset(args, model, snapshot_path):
             save_mode_path = os.path.join(snapshot_path, 'epoch_' + str(epoch_num) + '.pth')
             torch.save(model.state_dict(), save_mode_path)
             logging.info("save model to {}".format(save_mode_path))
-            iterator.close()
+            # iterator.close()
             break
 
     writer.close()
