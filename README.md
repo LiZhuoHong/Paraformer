@@ -18,8 +18,10 @@ Paraformer
 ## Training Instructions
 
 * **To train and test the Paraformer on the default Chesapeake Bay dataset, follow these steps:**
-1. Download the imagenet21k ViT pre-train model at [**Pre-train ViT**](https://drive.google.com/file/d/10Ao75MEBlZYADkrXE4YLg6VObvR0b2Dr/view?usp=sharing) and put it at "./networks/pre-train_model/imagenet21k"
-2. If you want to run the code with the default Chesapeake dataset, we provide example data for the state of New York. Download the dataset at [**Baidu cloud**](https://pan.baidu.com/s/1FOCRmWenNmJ9mYDKBK_uXQ?pwd=2024) and put them at "./dataset/Chesapeake_NewYork_dataset".
+1. Download the imagenet21k ViT pre-train model at [**Pre-train ViT**](https://drive.google.com/file/d/10Ao75MEBlZYADkrXE4YLg6VObvR0b2Dr/view?usp=sharing) and put it at *"./networks/pre-train_model/imagenet21k"*
+   
+2. If you want to run the code with the default Chesapeake dataset, we provide example data for the state of New York. Download the dataset at [**Baidu cloud**](https://pan.baidu.com/s/1FOCRmWenNmJ9mYDKBK_uXQ?pwd=2024) and put them at *"./dataset/Chesapeake_NewYork_dataset"*.
+   
 3. Run the "Train" command:
    ```bash
    python train.py --dataset Chesapeake --img_size 224 --batch_size 10 --max_epochs 100 --savepath *save path of your folder* --gpu 0
