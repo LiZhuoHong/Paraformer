@@ -13,8 +13,6 @@ Our previous works:
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): The first 1-m resolution national-scale land-cover map of China.
 
-Paraformer
--------
 ## Training Instructions
 
 * **To train and test the Paraformer on the default Chesapeake Bay dataset, follow these steps:**
