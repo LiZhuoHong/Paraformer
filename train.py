@@ -32,11 +32,11 @@ if __name__ == "__main__":
     torch.cuda.manual_seed(args.seed)
     dataset_name = args.dataset
     dataset_config = {
-        'Chesapeake': {
-            'list_dir': './dataset/NY_raw.csv', # The path of the *.csv file
+        'Chesapeake': {  # default dataset as a example
+            'list_dir': './dataset/CSV_list/Chesapeake_NewYork.csv', # The path of the *.csv file
             'num_classes': 17
         }
-    }
+    }# Create a config to your own dataset here
     if args.batch_size != 24 and args.batch_size % 6 == 0:
         args.base_lr *= args.batch_size / 24
     args.num_classes = dataset_config[dataset_name]['num_classes']
@@ -51,6 +51,4 @@ if __name__ == "__main__":
     config_vit.patches.grid = (int(args.img_size / vit_patches_size), int(args.img_size / vit_patches_size))
     net = ViT_seg(config_vit, backbone=L2HNet(width=args.CNN_width),img_size=args.img_size, num_classes=config_vit.n_classes).cuda()
     net.load_from(weights=np.load(config_vit.pretrained_path))
-
-    trainer = {'Chesapeake': trainer_dataset}
-    trainer[dataset_name](args, net, snapshot_path)
+    trainer_dataset(args, net, snapshot_path)
