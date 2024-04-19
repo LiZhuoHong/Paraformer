@@ -22,7 +22,7 @@ Our previous works:
    
 3. Run the "Train" command:
    ```bash
-   python train.py --dataset Chesapeake --img_size 224 --batch_size 10 --max_epochs 100 --savepath *save path of your folder* --gpu 0
+   python train.py --dataset Chesapeake --batch_size 10 --max_epochs 100 --savepath *save path of your folder* --gpu 0
 4. After training, run the "Test" command:
    ```bash
    python test.py --dataset Chesapeake --model_path *The path of trained .pth file* --save_path *To save the inferred results* --gpu 0
