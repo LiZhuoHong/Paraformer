@@ -10,6 +10,7 @@ Contact me at ashelee@whu.edu.cn
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
 Our previous works:
+* [**SegLand**](https://arxiv.org/abs/2404.12721): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): The first 1-m resolution national-scale land-cover map of China.
 
