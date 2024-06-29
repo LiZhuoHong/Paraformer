@@ -6,11 +6,11 @@ To address these limitations, we propose an efficient, weakly supervised framewo
 The Paraformer is accepted by CVPR 2024 **:rocket:Highlight:rocket:** with a score of 5/5/4. See you in VALSE (Chongqing, 5 May) and CVPR (Seattle, 17 June)!
 
 Contact me at ashelee@whu.edu.cn
-* [**Paper**](https://arxiv.org/abs/2403.02746)
+* [**Paper**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf)
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
 Our previous works:
-* [**SegLand**](https://arxiv.org/abs/2404.12721): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.[**Code**](https://github.com/LiZhuoHong/SegLand)
+* [**SegLand**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.[**Code**](https://github.com/LiZhuoHong/SegLand)
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022. The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://arxiv.org/abs/2403.02746): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
@@ -72,10 +72,12 @@ The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zen
 Citation
 -------
    ```bash
-@article{li2024learning,
-  title={Learning without Exact Guidance: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels},
-  author={Li, Zhuohong and He, Wei and Li, Jiepan and Lu, Fangxiao and Zhang, Hongyan},
-  journal={arXiv preprint arXiv:2403.02746},
-  year={2024}
+@InProceedings{Li_2024_CVPR,
+    author    = {Li, Zhuohong and He, Wei and Li, Jiepan and Lu, Fangxiao and Zhang, Hongyan},
+    title     = {Learning without Exact Guidance: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {27717-27727}
 }
 
