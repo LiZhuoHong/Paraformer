@@ -72,6 +72,16 @@ The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zen
 Citation
 -------
    ```bash
+@article{li2022breaking,
+  title={Breaking the resolution barrier: A low-to-high network for large-scale high-resolution land-cover mapping using low-resolution labels},
+  author={Li, Zhuohong and Zhang, Hongyan and Lu, Fangxiao and Xue, Ruoyao and Yang, Guangyi and Zhang, Liangpei},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={192},
+  pages={244--267},
+  year={2022},
+  publisher={Elsevier}
+}
+
 @InProceedings{Li_2024_CVPR,
     author    = {Li, Zhuohong and He, Wei and Li, Jiepan and Lu, Fangxiao and Zhang, Hongyan},
     title     = {Learning without Exact Guidance: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels},
@@ -80,4 +90,3 @@ Citation
     year      = {2024},
     pages     = {27717-27727}
 }
-
