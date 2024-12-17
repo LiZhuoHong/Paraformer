@@ -13,7 +13,7 @@ Our previous works:
 * [**SegLand**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.[**Code**](https://github.com/LiZhuoHong/SegLand)
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022. The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
-* [**BuildingMap**](https://arxiv.org/abs/2403.02746): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
+* [**BuildingMap**](https://ieeexplore.ieee.org/document/10641437): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
 ## Training Instructions
 
 * **To train and test the Paraformer on the default Chesapeake Bay dataset, follow these steps:**
