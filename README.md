@@ -1,9 +1,10 @@
-# Paraformer: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels
-Large-scale high-resolution (HR) land-cover mapping is a vital task to survey the Earth's surface and resolve many challenges facing humanity. 
-However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
-To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR land-cover mapping with easy-access historical land-cover data of low resolution (LR). 
+# Paraformer: Updating Large-scale High-resolution Land Cover Geographical Maps from Limited Historical Labels
 
-The Paraformer is accepted by CVPR 2024 **:rocket:Highlight:rocket:** with a score of 5/5/4. See you in VALSE (Chongqing, 5 May) and CVPR (Seattle, 17 June)!
+Large-scale high-resolution (HR) mapping is a vital task to survey the Earth's surface and resolve many challenges facing humanity. 
+However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
+To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR geographical mapping with easy-access anotation data, e.g., historical map at a low resolution (LR) or Volunteer Geographic Information (VGI) data. 
+
+The Paraformer is accepted by IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024, ranking as a **:rocket:Highlight:rocket:** paper (Top 2.6%) with a score of 5/5/4!
 
 Contact me at ashelee@whu.edu.cn
 * [**Paper**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf)
