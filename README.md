@@ -1,4 +1,4 @@
-# Paraformer: Updating Large-scale High-resolution Land Cover Geographical Maps from Limited Historical Labels
+# Paraformer: Updating Large-scale High-resolution Geographical Maps from Limited Historical Labels
 
 Large-scale high-resolution (HR) mapping is a vital task to survey the Earth's surface and resolve many challenges facing humanity. 
 However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
