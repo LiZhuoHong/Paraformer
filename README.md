@@ -2,7 +2,7 @@
 
 Large-scale high-resolution (HR) mapping is a vital task to survey the Earth's surface and resolve many challenges facing humanity. 
 However, it is still a non-trivial task hindered by complex ground details, various landforms, and the scarcity of accurate training labels over a wide-span geographic area. 
-To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR geographical mapping with easy-access anotation data, e.g., historical map at a low resolution (LR) or Volunteer Geographic Information (VGI) data. 
+To address these limitations, we propose an efficient, weakly supervised framework (Paraformer), a.k.a Low-to-High Network (L2HNet) v2, to guide large-scale HR mapping with easy-access annotation data, e.g., historical map at a low resolution or Volunteer Geographic Information data. 🌟:**Currently, the framework supports mappings of land cover, land use, and building function**🌟.
 
 The Paraformer is accepted by **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)** 2024, ranking as a **:rocket:Highlight:rocket:** paper (Top 2.6%) with a score of 5/5/4!
 
@@ -18,13 +18,13 @@ Our previous works:
 
 ## News! Paraformer can map urban buildings' functions now!
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Building_mapping_result-l2.png" width="70%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/Building_function-mapping-l.png" width="70%">
 
-In our latest work, we utilize the Paraformer framework to present **the first nationwide building-level functional map of urban China**, processing over 69 TB of satellite data, including *1-meter Google Earth optical imagery*, *10-meter nighttime lights (SGDSAT-1)*, and *building height data (CNBH-10m)*. All data will be open access soon!
+In our latest work, we utilize the framework to present **the first nationwide building-level functional map of urban China**, processing over 69 TB of satellite data, including *1-meter Google Earth optical imagery*, *10-meter nighttime lights (SGDSAT-1)*, and *building height data (CNBH-10m)*. All data will be open access soon!
 
-During mapping, every building's functions are identified through segmentation and object classification processes shown below.
+The mapping process contains segmentation and object classification parts that are shown below:
 
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Building_function-mapping-l.png" width="70%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/Building_mapping_result-l2.png" width="70%">
 
 ------- 
 
@@ -52,7 +52,7 @@ During mapping, every building's functions are identified through segmentation a
    
 The Chesapeake Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Chesapeake%20Dataset.png" width="70%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/The%20Chesapeake%20Dataset.png" width="70%">
 The Chesapeake Bay dataset, grouped by Microsoft Research, contains 1-meter resolution images and a 30-meter resolution land-cover product as the training data pairs and also contains a 1-meter resolution ground reference for assessment. The figure illustrates the location, Digital Elevation Model (DEM), numbers of the tiles, and data samples of the Chesapeake Bay dataset. 
 
 * **The HR remote sensing images** with 1-meter resolution were captured by the airborne platform of the U.S. Department of Agriculture’s National Agriculture Imagery Program (NAIP). The images contained four bands of red, green, blue, and near-infrared.
@@ -65,7 +65,7 @@ The data can be downloaded at Microsoft's website: [**Chesapeake dataset**](http
 
 The Poland Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20Poland%20dataset.png" width="70%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/The%20Poland%20dataset.png" width="70%">
 The Poland dataset contained 14 Provinces of Poland, including the Provinces of Pomorskie, Lódzkie, Lubuskie, Dolnoslaskie, etc. The figure demonstrates the location, DEM, numbers of the tiles, and data samples of the Poland dataset. 
 
 * **The HR remote sensing images** with 0.25-meter and 0.5-meter resolution were collected from the LandCover.ai dataset where the image sources are from the public geodetic resource used in the Land Parcel Identification System (LPIS). The images contained three bands of red, green, and blue.
@@ -78,7 +78,7 @@ The data can be downloaded at [**Poland dataset**](https://drive.google.com/file
 
 The SinoLC-1 Dataset
 -------
-<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/The%20SinoLC-1%20dataset.png" width="70%">
+<img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/The%20SinoLC-1%20dataset.png" width="70%">
 Based on our previous work on SinoLC-1 (i.e., the first 1-m land-cover map of China), we regard the intersected results of three 10-m land-cover products (ESA_GLC10, Esri_GLC10, and FROM_GLC10) as the LR training labels of 1-m Google Earth images. The Paraformer refines a more accurate urban pattern. For the whole of Wuhan City, the reported overall accuracy (OA) of SinoLC-1 is 72.40%. The updated results of the proposed Paraformer reach 74.98% with a 2.58% improvement.
 
 The data can be downloaded at [**SinoLC-1 dataset**](https://doi.org/10.5281/zenodo.7707461)
