@@ -16,12 +16,14 @@ Our previous works:
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://ieeexplore.ieee.org/document/10641437): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
 
-## News! Paraformer can map urban buildings' function now!
+## News! Paraformer can map urban buildings' functions now!
 -------
 <img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Building_mapping_result-l2.png" width="70%">
-In our latest work, we utilize the Paraformer framework to present the **first nationwide building-level functional map of urban China**, processing over 69 terabytes of multi-source satellite data, including optical imagery *(1-meter Google Earth imagery)*, nighttime lights *(SGDSAT-1 satellite)*, and altimetry observations *(CNBH-10m dataset)*. All data will be open access soon!
 
-During the mapping process, every building's function types are identified through the segmentation and object classification process shown below.
+In our latest work, we utilize the Paraformer framework to present **the first nationwide building-level functional map of urban China**, processing over 69 TB of satellite data, including *1-meter Google Earth optical imagery*, *10-meter nighttime lights (SGDSAT-1)*, and *building height data (CNBH-10m)*. All data will be open access soon!
+
+During mapping, every building's functions are identified through segmentation and object classification processes shown below.
+
 <img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Building_function-mapping-l.png" width="70%">
 
 ------- 
@@ -43,7 +45,7 @@ During the mapping process, every building's function types are identified throu
    
 * **To train and test the framework on your dataset:**
 
-1. Generate a train and test lists (.csv) of your dataset (an example is in the "dataset" folder).
+1. Generate a train and test list (.csv) of your dataset (an example is in the "dataset" folder).
 2. Change the label class and colormap in the "utils.py" file.
 3. Add your dataset_config in the "train.py" and "test.py" files.
 4. Run the command above by changing the dataset name.
