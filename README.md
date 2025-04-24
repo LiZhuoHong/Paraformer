@@ -16,7 +16,7 @@ Our previous works:
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://ieeexplore.ieee.org/document/10641437): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
 
-##News! Paraformer is available to map every building's function in large-scale urban areas.
+## News! Paraformer is available to map every building's function in large-scale urban areas.
 -------
 <img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Building_mapping_result-l2.png" width="70%">
 In our latest work, we utilize the Paraformer framework to present the **first nationwide building-level functional map of urban China**, processing over 69 terabytes of multi-source satellite data, including optical imagery *(1-meter Google Earth imagery)*, nighttime lights *(SGDSAT-1 satellite)*, and altimetry observations *(CNBH-10m dataset)*. All data will be open access soon!
