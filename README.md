@@ -10,11 +10,12 @@ Contact me at ashelee@whu.edu.cn
 * [**Paper**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf)
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
-Our previous works:
-* [**SegLand**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.[**Code**](https://github.com/LiZhuoHong/SegLand)
-* [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022. The low-to-high network for HR mapping using LR labels.
+Our related works:
+* [**SinoBF-1**](https://www.nature.com/articles/s41467-026-69589-5): accepted by Nature Communications 2026, Building function map of China.[**Code**](https://github.com/LiZhuoHong/SinoBF-1/)
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://ieeexplore.ieee.org/document/10641437): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
+* * [**SegLand**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPRW 2024 (Oral) and won 1st place in OpenEarthMap Challenge, discovering novel classes in land-cover mapping.[**Code**](https://github.com/LiZhuoHong/SegLand)
+* [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022. The low-to-high network for HR mapping using LR labels.
 
 ## News! Paraformer can map urban buildings' functions now!
 -------
