@@ -21,7 +21,11 @@ Our related works:
 -------
 **Check our paper: 
 [**SinoBF-1**](https://www.nature.com/articles/s41467-026-69589-5)**
+
+**Check the GitHub page:
 [**Code**](https://github.com/LiZhuoHong/SinoBF-1/)
+
+**Check the data (Building function map for 109 cities in China):
 [**Data**](https://zenodo.org/records/17844789)
 
 <img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/Building_function-mapping-l.png" width="70%">
