@@ -23,6 +23,7 @@ Our related works:
 [**SinoBF-1**](https://www.nature.com/articles/s41467-026-69589-5)**
 [**Code**](https://github.com/LiZhuoHong/SinoBF-1/)
 [**Data**](https://zenodo.org/records/17844789)
+
 <img src="https://github.com/LiZhuoHong/Paraformer/blob/main/Fig/Building_function-mapping-l.png" width="70%">
 In our latest work, we utilize the framework to present **the nationwide building-level functional map of urban China**, processing over 69 TB of satellite data, including *1-meter Google Earth optical imagery*, *10-meter nighttime lights (SGDSAT-1)*, and *building height data (CNBH-10m)*. All data will be open access soon!
 
